@@ -4,14 +4,15 @@ import Navbar from "./Navbar";
 
 export default function DashboardLayout() {
   return (
-    <div className="flex h-screen">
+    <div className="flex flex-col md:flex-row h-screen">
       <Sidebar />
 
-      {/* Main Content */}
       <div className="flex-1 flex flex-col">
-        <Navbar />
-        {/* content */}
-        <div className="p-4 bg-gray-100 flex-1 overflow-auto">
+        <div className="hidden md:block">
+          <Navbar />
+        </div>
+
+        <div className="flex-1 overflow-auto p-4 bg-gray-100 text-black dark:bg-gray-900 dark:text-white">
           <Outlet />
         </div>
       </div>

@@ -1,3 +1,79 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+a:hover {
+  text-decoration: none !important;
+  color: #000;
+}
+
+.active {
+  color: #e96969 !important;
+}
+
+input,
+textarea {
+  box-shadow: none !important;
+  border: solid 1px rgb(222, 226, 230) !important;
+}
+
+::placeholder {
+  font-size: 15px !important;
+}
+
+label {
+  color: #303030;
+  font-size: 15px;
+  font-weight: 570;
+  padding-bottom: 20px !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+:-ms-input-placeholder {
+  font-size: 15px !important;
+}
+
+::-ms-input-placeholder {
+  font-size: 15px !important;
+}
+
+input.ng-invalid.ng-touched {
+  border: red 1px solid !important;
+}
+
+.spinner {
+  inset: 0;
+}
+
+.css-598xy5-MuiPaper-root {
+  background-color: transparent !important;
+  -webkit-transition: none !important;
+  transition: none !important;
+  border-radius: 4px;
+  box-shadow: none !important;
+  padding: none !important;
+}
+
+@layer components {
+  .space {
+    @apply max-w-6xl mx-auto px-4 md:px-6 lg:px-8 gap-4;
+  }
+
+  .input-style {
+    @apply border-gray-800 bg-slate-600 rounded-lg p-2 text-white w-full;
+  }
+
+  .hover {
+    @apply transition-all duration-300 hover:-translate-y-2 cursor-pointer;
+  }
+}
+
+@theme {
+  --color-regal-blue: #243c5a;
+}
