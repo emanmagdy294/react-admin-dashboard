@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 a:hover {
   text-decoration: none !important;
   color: #000;
@@ -71,6 +70,10 @@ input.ng-invalid.ng-touched {
 
   .hover {
     @apply transition-all duration-300 hover:-translate-y-2 cursor-pointer;
+  }
+
+  .table-style {
+    @apply px-6 py-4 text-sm font-semibold text-slate-700;
   }
 }
 

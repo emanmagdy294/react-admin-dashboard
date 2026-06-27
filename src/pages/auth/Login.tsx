@@ -33,7 +33,7 @@ export default function Login() {
         password: form.password,
       });
 
-      navigate("/dashboard");
+      navigate("/users");
     } catch (error) {
       alert(error);
     }

@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App.tsx";
 import { ThemeProvider } from "./context/theme/ThemeProvider";
 import { AuthProvider } from "./context/auth/AuthProvider.tsx";
+import "./app/i18n/i18n";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

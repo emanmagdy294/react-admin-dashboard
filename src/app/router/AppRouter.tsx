@@ -1,10 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "../../pages/auth/Login";
 import Register from "../../pages/auth/Register";
-import Home from "../../pages/dashboard/Home";
 import Users from "../../pages/dashboard/Users";
 import DashboardLayout from "../../components/layouts/DashboardLayout";
 import ProtectedRoute from "./ProtectedRoute";
+import AddUser from "../../pages/dashboard/AddUser";
+import EditUser from "../../pages/dashboard/EditUser";
 
 export default function AppRouter() {
   return (
@@ -21,8 +22,9 @@ export default function AppRouter() {
             </ProtectedRoute>
           }
         >
-          <Route path="/dashboard" element={<Home />} />
           <Route path="/users" element={<Users />} />
+          <Route path="/add-user" element={<AddUser />} />
+          <Route path="/editUser/:id" element={<EditUser />} />
         </Route>
       </Routes>
     </BrowserRouter>
