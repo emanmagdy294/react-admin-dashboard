@@ -50,7 +50,7 @@ export default function Users() {
           Add User
         </Link>
       </div>
-      <div className="overflow-hidden rounded-xl border border-gray-300">
+      <div className="overflow-auto rounded-xl border border-gray-300">
         <table className="table-auto text-center border-collapse border border-gray-400 w-full">
           <thead className="bg-slate-100 rounded-xl">
             <tr>
@@ -78,14 +78,14 @@ export default function Users() {
                       setSelectedUserId(user.id!);
                       setOpenDelete(true);
                     }}
-                    className="rounded-md bg-red-500 px-4 mx-1 py-2 text-white transition hover:bg-red-600"
+                    className="rounded-md bg-red-500 px-4 m-1 py-2 text-white transition hover:bg-red-600"
                   >
                     {t("delete")}
                   </button>
 
                   <button
                     onClick={() => navigate(`/editUser/${user.id}`)}
-                    className="rounded bg-blue-500 px-4 py-2 text-white"
+                    className="rounded m-1 bg-blue-500 px-4 py-2 text-white"
                   >
                     {t("update")}
                   </button>
